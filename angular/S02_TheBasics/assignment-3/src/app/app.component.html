@@ -1,0 +1,5 @@
+<button (click)="btnClicked()">Display Details</button>
+<p *ngIf="isBtnToggled">Secret Password = Top Secret</p>
+<div *ngFor="let currNum of numOfBtnClicks"
+[ngStyle]="{backgroundColor: getBackgroundColor(currNum)}"
+[ngClass]="{'text-color': getColor(currNum)}">{{currNum}}</div>
